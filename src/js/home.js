@@ -15,6 +15,6 @@
         const res = await contractInstance.logout.call(uname);
         console.log(res);
         localStorage.removeItem('username');
-        location.reload();
+        location.href = '/';
     }
 })().catch(err => console.log(err));
